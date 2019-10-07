@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>First Page</title>
+	<style></style>
+	<link rel="stylesheet" href="cssstyle.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="description" content="First building block">
+	<meta name="keyword" content="first,page,site">
+	<meta name="author" content="VINAY">
+</head>
+
+<body>
+	<form action="/action_page.php" target="_Blank" method="post" autocomplete="on">
+		<fieldset>
+			<legend>Personal information:</legend>
+			<h1>Registration</h1>
+			<h3>Please Provide Personal information</h3>
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-25">
+						<label for="FirstName">First Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="FirstName" placeholder="First Name" required autofocus maxlength="15">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="LastName">Last Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="LastName" placeholder="Last Name" required maxlength="15">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="email" name="email">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="Gender">Gender</label>
+					</div>
+					<div class="col-75">
+						<input type="radio" name="Gender" value="Male">Male
+						<input type="radio" name="Gender" value="Female">Female
+						<input type="radio" name="Gender" value="Other">Other
+						<br></div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="Birthday">Birthday</label></div>
+					<div class="col-75">
+						<input type="date" name="Birthday" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="Qualification">Qualification</label>
+					</div>
+					<div class="col-75">
+						<input list="Qualification" name="Qualification" required>
+						<datalist id="Qualification">
+							<option value="BE">BE</option>
+							<option value="MCA">MCA</option>
+							<option value="BA">BA</option>
+						</datalist><br></div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="textarea">Message</label>
+					</div>
+					<div class="col-75">
+						<textarea name="textarea" cols="20" rows="5"></textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="Country">Country</label></div>
+					<div class="col-75">
+						<select name="Country">
+							<option value="India">India</option>
+							<option value="US">Us</option>
+							<option value="Shrilanka">Shrilanka</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<button type="submit" name="submit">Submit</button><input type="reset" name="reset"><br>
+				</div>
+			</div>
+		</fieldset><br>
+	</form>
+</body>
